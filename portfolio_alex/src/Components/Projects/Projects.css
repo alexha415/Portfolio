@@ -1,0 +1,11 @@
+
+.carousel-item > img{
+  width: 50%;
+}
+.carousel{
+  border: 5px solid black;
+}
+#header{
+  display:flex;
+  justify-content: center;
+}

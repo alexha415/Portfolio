@@ -1,0 +1,7 @@
+#header{
+  width: 100vw;
+  height: 20vh;
+  display:flex;
+  align-items: flex-end;
+  padding: 10px;
+}
