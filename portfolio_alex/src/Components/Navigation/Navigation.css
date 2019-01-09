@@ -26,6 +26,9 @@
 #button-ct:last-child{
   border-color: transparent;
 }
+#button-ct:hover > #header-button{
+    color: grey;
+}
 #header-group{
   border-radius: 10px;
   border: 2px solid white;
