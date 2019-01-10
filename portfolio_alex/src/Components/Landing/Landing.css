@@ -6,8 +6,6 @@
   top: 256px;
 }
 #landing-info {
-  max-width: 80vw;
-  height: 75vh;
   overflow: hidden;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
   opacity: .8;
