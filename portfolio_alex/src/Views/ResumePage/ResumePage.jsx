@@ -19,7 +19,9 @@ export default class Resume extends Component {
     return(
       <Row>
         <Col>
-          <applet url={'../../resources/TankGame.jar'} style={{width: '350px', height:'350px'}}></applet>
+        <applet code="TankGame.GameController" archive="TankGame.jar"
+          width="400" height="350">
+        </applet>
         </Col>
       </Row>
     );

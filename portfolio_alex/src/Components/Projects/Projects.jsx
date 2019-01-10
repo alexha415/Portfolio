@@ -1,4 +1,20 @@
 import React, { Component } from 'react';
+import brickbreaker1 from '../../resources/brickbreaker1.png';
+import brickbreaker2 from '../../resources/brickbreaker2.png';
+import brickbreaker3 from '../../resources/brickbreaker3.png';
+import brickbreaker4 from '../../resources/brickbreaker4.png';
+import brickbreaker5 from '../../resources/brickbreaker5.png';
+
+import tankwars1 from '../../resources/tankwars1.png';
+import tankwars2 from '../../resources/tankwars2.png';
+import tankwars3 from '../../resources/tankwars3.png';
+import tankwars4 from '../../resources/tankwars4.png';
+
+import gatortrader1 from '../../resources/gatortrader1.png';
+import gatortrader2 from '../../resources/gatortrader2.png';
+import gatortrader3 from '../../resources/gatortrader3.png';
+import gatortrader4 from '../../resources/gatortrader4.png';
+
 import {
   Carousel,
   CarouselItem,
@@ -13,28 +29,33 @@ import './Projects.css';
 
 const items = [
   {
-    src: 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa1d%20text%20%7B%20fill%3A%23555%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa1d%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22285.921875%22%20y%3D%22218.3%22%3EFirst%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E',
+    src: [gatortrader1,gatortrader2,gatortrader3,gatortrader4],
     altText: 'GatorTraders',
     caption: 'GatorTraders',
     path: 'gator-traders'
   },
   {
-    src: 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa20%20text%20%7B%20fill%3A%23444%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa20%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23666%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22247.3203125%22%20y%3D%22218.3%22%3ESecond%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E',
+    src: [tankwars4,tankwars1,tankwars2,tankwars3],
     altText: 'Tank Wars',
     caption: 'Tank Wars',
     path: 'tank-wars'
   },
   {
-    src: 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa21%20text%20%7B%20fill%3A%23333%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa21%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23555%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22277%22%20y%3D%22218.3%22%3EThird%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E',
+    src: [],
     altText: 'SpeedBuddy',
     caption: 'SpeedBuddy',
     path: 'speed-buddy'
   },
   {
-    src: 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa21%20text%20%7B%20fill%3A%23333%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa21%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23555%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22277%22%20y%3D%22218.3%22%3EThird%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E',
-    altText: 'New Project',
-    caption: 'New Project',
-    path: 'new-project'
+    src: [
+      brickbreaker1,
+      brickbreaker2,
+      brickbreaker3,
+      brickbreaker4
+    ],
+    altText: 'Super Rainbow Reef',
+    caption: 'Super Rainbow Reef',
+    path: 'super-rainbow-reef'
   }
 ];
 
@@ -93,7 +114,13 @@ class Projects extends Component {
 
           <Row id = "carousel-item-ct">
           <Col lg={{size:6,offset:0}} id = "img-col" style = {{padding: 0}}>
-            <img src={item.src} alt={item.altText} />
+              {item.src.map((picture) =>{
+                console.log(picture)
+                return (
+                  <img src = {picture} alt = {item.altText}/>
+                );
+              })
+              }
           </Col>
           <Col lg={{size:6, offset: 0}} style={{padding: 0}}>
               <Jumbotron id = "test">
@@ -111,11 +138,12 @@ class Projects extends Component {
         activeIndex={activeIndex}
         next={this.next}
         previous={this.previous}
+        data-interval="false"
       >
         <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
         {slides}
-        <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
-        <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
+        <CarouselControl id = 'control-left' direction="prev" directionText="Previous" onClickHandler={this.previous} />
+        <CarouselControl id = 'control-right' direction="next" directionText="Next" onClickHandler={this.next} />
       </Carousel>
     );
   }
