@@ -6,10 +6,18 @@
   top: 256px;
 }
 #landing-info {
-  overflow: hidden;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
-  opacity: .8;
+  background-image: url('../../resources/portrait-alexha.jpg');
+  opacity: .9;
+  background-size:auto;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-color: #ccb9b9;
+  height: 100%;
 }
 #jumboCol{
   margin-top: 10px;
+}
+p{
+  color: black;
 }

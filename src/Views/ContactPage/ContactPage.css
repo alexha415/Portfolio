@@ -24,7 +24,3 @@
 #media-icon:hover{
   opacity: .8;
 }
-#contact-info-ct:first-child{
-  display: flex;
-  justify-content: center;
-}

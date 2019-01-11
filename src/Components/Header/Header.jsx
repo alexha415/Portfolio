@@ -5,7 +5,8 @@ import './Header.css';
 export default class Header extends Component {
   render(){
     return(
-      <Row>
+      <Row style={{display:'flex', justifyContent:'center'}}>
+        <h1 id = 'disclaimer'> THIS WEBSITE IS A WORK IN PROGRESS</h1>
         <Col id = "header">
           <Navigation/>
         </Col>
