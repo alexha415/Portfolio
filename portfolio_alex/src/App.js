@@ -4,13 +4,14 @@ import Landing from './Components/Landing/Landing';
 import Home from './Views/HomePage/HomePage';
 import Routes from './Routes';
 import './App.css';
+import {Col} from 'reactstrap';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <Col className="App">
         <Header/>
         <Routes/>
-      </div>
+      </Col>
     );
   }
 }

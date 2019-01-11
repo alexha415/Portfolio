@@ -15,13 +15,14 @@ export default class Resume extends Component {
     });
   }
 
+
   render(){
     return(
       <Row>
-        <Col>
-        <applet code="TankGame.GameController" archive="TankGame.jar"
-          width="400" height="350">
-        </applet>
+        <Col lg = {{size: 4, offset: 3}}>
+        <h1 id = 'title'>Resume</h1>
+        <hr style ={{borderColor:'white'}}/>
+        <embed src="https://drive.google.com/file/d/1nRBBWR-Pmb79l-UsLxY-1_KYRGZiNK5l/preview#toolbar=0&navpanes=0" width="640" height="600"></embed>
         </Col>
       </Row>
     );

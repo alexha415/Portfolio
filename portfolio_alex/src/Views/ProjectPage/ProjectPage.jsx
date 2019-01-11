@@ -61,14 +61,24 @@ export default class Project extends Component {
   }
   render(){
     return(
+      <Fade in = {this.state.fadeIn}>
       <Row>
         <Col>
+        <h1 id = 'title'>Projects</h1>
+        <hr style ={{borderColor:'white'}}/>
         { items.map((item) => {
-              return (<div><Projects project = {item}/> <Col lg={{size: 8, offset: 2}}> <hr style={{borderColor: 'white', size: '5px'}}/> </Col> </div>);
+              return (
+                <div>
+                  <Projects project = {item}/>
+                  <Col lg={{size: 8, offset: 2}}>
+                    <hr style={{borderColor: 'white', size: '5px'}}/>
+                  </Col>
+                </div>);
           })
         }
         </Col>
       </Row>
+      </Fade>
     );
   }
 }
