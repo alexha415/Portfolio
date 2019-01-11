@@ -14,6 +14,7 @@ const Routes = () => (
       <Route path = '/resume' component = {Resume}/>
       <Route path = '/contact' component = {Contact}/>
       <Route path = '/' component = {Home}/>
+      <Route path = '*' component = {Home}/>
     </Switch>
   </routes>
 )
