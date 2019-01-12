@@ -22,10 +22,9 @@ export default class Contact extends Component {
           <hr style ={{borderColor:'white'}}/>
         </Col>
         <Row>
-          <Col sm = {{size:12,offset: 0 }} lg = {{size: 4, offset: 4}} >
+          <Col sm = {{size:12,offset: 0 }} lg = {{size: 6, offset: 3}} >
             <Container id = "contact-info-ct">
             <p style={{marginTop:'10px', color: '#d0d6e0'}}>Email Address: alexha415@gmail.com</p>
-
             <h1 style ={{color: 'white'}}>Social Media and Links</h1>
               <Container id = "icons">
                 <SocialIcon id = "media-icon" url = "https://www.facebook.com/alex.g.ha"> </SocialIcon>

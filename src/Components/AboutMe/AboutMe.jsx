@@ -30,17 +30,17 @@ export default class AboutMe extends Component {
       <Row>
         <Col id = 'jumboCol' lg={{size: 10, offset: 1}}>
         <Jumbotron class = "container-fluid" id = 'about-jumbo'>
-        <h1> Education and Work </h1>
+        <h1 id = 'about-desc'> Education and Work </h1>
         <hr className="my-2" />
         <p  id = 'summary' className="lead">
           {about.work_desc}
         </p>
-        <h1> Hobbies </h1>
+        <h1 id = 'about-desc'> Hobbies </h1>
         <hr className="my-2" />
         <p  id = 'summary' className="lead">
           {about.hobby_desc}
         </p>
-        <h1> Goals </h1>
+        <h1 id = 'about-desc'> Goals </h1>
         <hr className="my-2" />
         <p  id = 'summary' className="lead">
           {about.goals_desc}

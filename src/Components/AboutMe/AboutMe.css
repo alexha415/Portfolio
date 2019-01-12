@@ -4,3 +4,6 @@
 #about-jumbo{
   background-color: #ccb9b9;
 }
+#about-desc:not(:first-child){
+  margin-top: 50px;
+}

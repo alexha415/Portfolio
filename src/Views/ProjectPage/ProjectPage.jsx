@@ -20,6 +20,11 @@ import gatortrader2 from '../../resources/gatortrader2.png';
 import gatortrader3 from '../../resources/gatortrader3.png';
 import gatortrader4 from '../../resources/gatortrader4.png';
 
+import speedbuddy1 from '../../resources/speedbuddy1.png';
+import speedbuddy2 from '../../resources/speedbuddy2.png';
+import speedbuddy3 from '../../resources/speedbuddy3.png';
+import speedbuddy4 from '../../resources/speedbuddy4.png';
+
 const items = [
   {
     src: [gatortrader1,gatortrader2,gatortrader3,gatortrader4],
@@ -34,8 +39,8 @@ const items = [
     path: 'tank-wars'
   },
   {
-    src: [],
-    srcDesc: [],
+    src: [speedbuddy1,speedbuddy2,speedbuddy3,speedbuddy4],
+    srcDesc:['test1','test2','test3','test4'],
     name: 'Speed Buddy',
     path: 'speed-buddy'
   },

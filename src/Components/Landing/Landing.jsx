@@ -8,7 +8,8 @@ export default class Landing extends Component {
       <Row>
         <Col id = 'jumboCol' lg={{size: 10, offset: 1}}>
         <Jumbotron class = "container-fluid" id = 'landing-info'>
-        <Col lg = {{size:6, offset: 0}}>
+        <Row id = 'jumbo-row'>
+        <Col className = "landing-text" lg = {{size:6, offset: 0}}>
         <h1 className="display-3" style={{color:'#302d2d'}}>Hi, I'm Alex Ha</h1>
         <p className="lead">
         Aspiring front end developer, currently studying at San Francisco
@@ -16,6 +17,10 @@ export default class Landing extends Component {
         <hr style = {{borderColor:'#d0d6e0'}} />
         <p>If you're here, you're probably curious about who I am. Go ahead and check out my about page, then, take a look at some of the projects I've worked on.</p>
         </Col>
+        <Col lg = {{size:6, offset:0}}>
+        <img style = {{maxWidth: '100%'}} src = {require('../../resources/portrait-alexha.jpg')}></img>
+        </Col>
+        </Row>
         </Jumbotron>
         </Col>
       </Row>
