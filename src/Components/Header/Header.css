@@ -9,3 +9,10 @@
   color: white;
   margin-top: 20px;
 }
+#contact-info-header{
+  color: white;
+}
+#contact-info-header:first-child{
+  margin-top: 20px;
+  font-size: 30px;
+}

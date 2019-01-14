@@ -7,7 +7,13 @@ export default class Header extends Component {
     return(
       <Col>
       <Row style ={{display:'flex', justifyContent:'center'}}>
-        <h1 id = 'disclaimer'> THIS WEBSITE IS A WORK IN PROGRESS</h1>
+        <Col style ={{display:'flex', justifyContent:'center'}}>
+          <h1 id = 'disclaimer'>Alex Ha</h1>
+        </Col>
+        <Col>
+          <p id = 'contact-info-header'>tel: 415 900 8872</p>
+          <p id = 'contact-info-header'>email: alexha415@gmail.com </p>
+        </Col>
       </Row>
       <Row>
         <Col id = "header">

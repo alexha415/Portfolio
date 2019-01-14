@@ -65,8 +65,8 @@ class Projects extends Component {
         <CarouselItem
           onExiting={this.onExiting}
           onExited={this.onExited}
-          key={img}>
-
+          key={img}
+          data-interval = "false">
           <Row id = "carousel-item-ct">
           <Col id = "img-col" style = {{padding: 0}}>
             <img src = {img} />
@@ -81,7 +81,6 @@ class Projects extends Component {
         activeIndex={activeIndex}
         next={this.next}
         previous={this.previous}
-        data-interval="false"
       >
         <CarouselIndicators items={this.props.images} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
         {slides}
