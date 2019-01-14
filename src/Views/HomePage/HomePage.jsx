@@ -19,7 +19,7 @@ export default class Home extends Component {
     return(
       <Fade in = {this.state.fadeIn}>
       <Col sm={{size: 10,offset: 0}} lg = {{size: 8, offset:2}}>
-        <h1 style={{color: '#d0d6e0'}}>Landing</h1>
+        <h1 style={{color: '#f7e4d2'}}>Home</h1>
         <hr style ={{borderColor:'white'}}/>
       </Col>
       <Row>

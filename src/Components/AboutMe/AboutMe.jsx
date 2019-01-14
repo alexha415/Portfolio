@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Navigation from '../Navigation/Navigation';
-import './AboutMe.css';
-import {Col,Row,Jumbotron,Button} from 'reactstrap';
+import styles from './AboutMe.css';
+import {Col,Row,Jumbotron,Button,Container} from 'reactstrap';
 
 const about = {
     work_desc: "I am currently studying Computer Science at San Francisco State University. My current\
@@ -24,22 +24,29 @@ const about = {
     this website is one of my first personal projects, so if you have any criticisms, be sure to \
     head over to my contact info and give me some advice!"
 }
+
+const selecter = "aboutJumbo";
 export default class AboutMe extends Component {
   render(){
+    console.log(styles.aboutJumbo);
     return(
-      <Row>
-        <Col id = 'jumboCol' lg={{size: 10, offset: 1}}>
-        <Jumbotron class = "container-fluid" id = 'about-jumbo'>
+      <Row className = "row no-gutters">
+        <Col className = 'jumboCol' lg='12'>
+        <Jumbotron id = 'aboutJumbo'>
         <h1 id = 'about-desc'> Education and Work </h1>
         <hr className="my-2" />
         <p  id = 'summary' className="lead">
           {about.work_desc}
         </p>
+        </Jumbotron>
+        <Jumbotron id = "aboutJumbo">
         <h1 id = 'about-desc'> Hobbies </h1>
         <hr className="my-2" />
         <p  id = 'summary' className="lead">
           {about.hobby_desc}
         </p>
+        </Jumbotron>
+        <Jumbotron id = "aboutJumbo">
         <h1 id = 'about-desc'> Goals </h1>
         <hr className="my-2" />
         <p  id = 'summary' className="lead">

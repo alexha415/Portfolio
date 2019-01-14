@@ -1,9 +1,25 @@
 #summary{
-  color: #302d2d;
+  color: #470d04;
+  font-weight: 600;
 }
-#about-jumbo{
-  background-color: #ccb9b9;
-}
-#about-desc:not(:first-child){
+#aboutJumbo{
+  background-color: #fce4e0;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 50px;
+  border-top: 4px solid #470d04;
+  border-bottom: 4px solid #470d04;
+}
+.jumboCol{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.row.no-gutters {
+  margin-right: -15px;
+  margin-left: -15px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#about-desc{
+  color: #470d04;
 }

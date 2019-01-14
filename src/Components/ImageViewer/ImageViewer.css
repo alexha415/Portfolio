@@ -29,7 +29,7 @@
   padding: 0px;
   display:flex;
   justify-content: center;
-  background-color: #ccb9b9;
+  background-color: #ffb489;
 }
 @media screen and (min-width: 600px){
   #img-col > img{

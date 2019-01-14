@@ -23,9 +23,9 @@ export default class About extends Component {
           <hr style ={{borderColor:'white'}}/>
         </Col>
       <Row>
-        <Col>
+        <Col style = {{paddingRight: '0px', paddingLeft: '0px'}}>
           <AboutMe/>
-        </Col>
+        </Col >
       </Row>
       </Fade>
     );

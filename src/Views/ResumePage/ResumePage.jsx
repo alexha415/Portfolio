@@ -24,8 +24,8 @@ export default class Resume extends Component {
         <hr style ={{borderColor:'white'}}/>
       </Col>
       <Row>
-        <Col lg = {{size: 4, offset: 3}}>
-        <embed src="https://drive.google.com/file/d/1nRBBWR-Pmb79l-UsLxY-1_KYRGZiNK5l/preview#toolbar=0&navpanes=0" width="640" height="600"></embed>
+        <Col lg = {{size: 6, offset: 3}}>
+        <embed src="https://drive.google.com/file/d/1nRBBWR-Pmb79l-UsLxY-1_KYRGZiNK5l/preview#toolbar=0&navpanes=0" width="100%" height = '500px'></embed>
         </Col>
       </Row>
       </Fade>

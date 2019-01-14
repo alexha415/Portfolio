@@ -78,7 +78,6 @@ export default class Project extends Component {
                 <div>
                   <Projects project = {item}/>
                   <Col lg={{size: 8, offset: 2}}>
-                    <hr style={{borderColor: 'white', size: '5px'}}/>
                   </Col>
                 </div>);
           })
