@@ -24,7 +24,7 @@
   display:flex;
   align-items: flex-start;
   justify-content: center;
-  height: 40vh;
+  height: 50vh;
 }
 h1{
   color: #470d04;
@@ -33,6 +33,4 @@ img{
   max-height: 100%;
   max-width: auto;
   align-self: center;
-
-  box-shadow: 5px 3px 10px 3px grey ;
 }

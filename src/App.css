@@ -5,6 +5,7 @@
   background-image: url("./resources/cloud-bg2.jpg");
   background-size: cover;
   background-repeat: repeat-y;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  overflow-x: hidden;
 }

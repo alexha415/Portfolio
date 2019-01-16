@@ -35,9 +35,11 @@ export default class AboutMe extends Component {
         <Jumbotron id = 'aboutJumbo'>
         <h1 id = 'about-desc'> Education and Work </h1>
         <hr className="my-2" />
-        <p  id = 'summary' className="lead">
-          {about.work_desc}
-        </p>
+        <Col lg = {{size: 7, offset: 0}} style ={{paddingLeft:'0px', paddingRight: '0px'}}>
+          <p  id = 'summary' className="lead">
+            {about.work_desc}
+          </p>
+        </Col>
         </Jumbotron>
         <Jumbotron id = "aboutJumbo">
         <h1 id = 'about-desc'> Hobbies </h1>

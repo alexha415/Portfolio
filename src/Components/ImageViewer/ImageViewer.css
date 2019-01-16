@@ -8,38 +8,38 @@
 }
 .carousel{
   width: 100%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
-.carousel-control-prev{
-  margin-left: -5vw;
+.carousel-control-prev-icon{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e") !important;
+}
+.carousel-control-next-icon{
+background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e") !important;
 }
 .carousel-control-next{
-  margin-right: -5vw;
 }
 .carousel-indicators{
   margin-bottom: -10vh;
 }
 .slide{
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
   height: auto;
-  width: auto;
 }
 #img-col{
   padding: 0px;
   display:flex;
   justify-content: center;
-  background-color: #ffb489;
+  background-color: transparent;
 }
 @media screen and (min-width: 600px){
   #img-col > img{
     max-width: 100%;
     max-height: 41vh;
-    transition: transform .3s;
 
   }
   #img-col > img:hover{
-    transform: scale(2);
   }
 }
 @media screen and (max-width: 600px){

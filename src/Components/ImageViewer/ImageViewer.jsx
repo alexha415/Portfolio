@@ -23,7 +23,6 @@ class Projects extends Component {
     this.goToIndex = this.goToIndex.bind(this);
     this.onExiting = this.onExiting.bind(this);
     this.onExited = this.onExited.bind(this);
-    this.ViewProject = this.ViewProject.bind(this);
   }
 
   onExiting() {
@@ -37,25 +36,20 @@ class Projects extends Component {
   next() {
     if (this.animating) return;
     const nextIndex = this.state.activeIndex === this.props.images.length - 1 ? 0 : this.state.activeIndex + 1;
-    this.setState({ activeIndex: nextIndex });
+    this.setState({ activeIndex: nextIndex }, () => this.props.setIndex(this.state.activeIndex));
   }
 
   previous() {
     if (this.animating) return;
     const nextIndex = this.state.activeIndex === 0 ? this.props.images.length - 1 : this.state.activeIndex - 1;
-    this.setState({ activeIndex: nextIndex });
+    this.setState({ activeIndex: nextIndex }, () => this.props.setIndex(this.state.activeIndex));
   }
 
   goToIndex(newIndex) {
     if (this.animating) return;
-    this.setState({ activeIndex: newIndex });
-  }
-
-  ViewProject(name){
-    this.props.history.push('/projects/'+name);
+    this.setState({ activeIndex: newIndex }, () => this.props.setIndex(this.state.activeIndex));
   }
   componentDidMount(){
-    console.log(this.props.history)
   }
   render() {
     const { activeIndex } = this.state;
@@ -67,11 +61,9 @@ class Projects extends Component {
           onExited={this.onExited}
           key={img}
           data-interval = "false">
-          <Row id = "carousel-item-ct">
           <Col id = "img-col" style = {{padding: 0}}>
             <img src = {img} />
           </Col>
-          </Row>
         </CarouselItem>
       );
     });
