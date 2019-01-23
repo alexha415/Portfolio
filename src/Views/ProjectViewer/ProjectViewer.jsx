@@ -27,7 +27,7 @@ export default class ProjectViewer extends Component {
     }
   }
   openNav(){
-    document.getElementById('proj-button-grp-col').style.width = "20vw";
+    document.getElementById('proj-button-grp-col').style.width = "100%";
   }
   closeNav(){
     document.getElementById('proj-button-grp-col').style.width = "0";
@@ -35,7 +35,7 @@ export default class ProjectViewer extends Component {
   render(){
     return(
       <Col className = 'project-col' lg = '12' style = {{paddingLeft: '0'}}>
-      <Row>
+      <Row id = 'navbar-row'>
           <Col  id = 'proj-button-grp-col' lg = '2'>
             <ButtonGroup id = "proj-btn-grp" vertical>
             <p>Projects</p>
@@ -56,7 +56,7 @@ export default class ProjectViewer extends Component {
             </Button>
             </ButtonGroup>
           </Col>
-          <Col lg = {{size:2, offset: 4}}>
+          <Col lg = {{size:2, offset: 0}}>
             <Button id = 'openNav' onClick = {this.openNav}>
               open navbar
             </Button>
@@ -72,7 +72,7 @@ export default class ProjectViewer extends Component {
             setIndex = {this.setIndex}/>
           </Col>
           <Col lg = '5'id = 'img-desc-col' lg = {{size: 6, offset:3}}>
-          <p id = 'img-desc'>{this.getDesc(this.state.index)}</p>
+            <p id = 'img-desc'>{this.getDesc(this.state.index)}</p>
           </Col>
         </Col>
       </Col>

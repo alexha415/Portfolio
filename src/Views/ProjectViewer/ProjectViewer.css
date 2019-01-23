@@ -11,6 +11,10 @@
 .project-h1{
   color: #470d04;
 }
+#navbar-row{
+  padding-left: 0;
+  padding-right: 0;
+}
 #proj-name-col{
   margin-top: 5vh;
   margin-bottom: 10vh;
@@ -45,6 +49,9 @@
 #proj-btn-grp{
   width: 100%;
   background-color: black;
+  transition: .5s;
+  padding-left: 0;
+  padding-right: 0;
 }
 #proj-btn-grp > a {
   width: 100%;
